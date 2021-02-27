@@ -1,0 +1,103 @@
+
+<app-header></app-header>
+<ion-content>
+
+
+
+  <div class="container-fluid">
+    <h3>Women</h3>  
+    <div class="btn-group" >
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="margin-top: 2px;"  >Category</button>
+      <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Jeans</a>
+          <a href="#" class="dropdown-item">Kurtis</a>
+      </div>
+    </div>
+    <div class="btn-group drop">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Color</button>
+      <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Red</a>
+          <a href="#" class="dropdown-item">Black</a>
+      </div>
+    </div>
+    <div class="btn-group drop">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Price</button>
+      <div class="dropdown-menu ">
+          <a href="#" class="dropdown-item">500-1000</a>
+          <a href="#" class="dropdown-item">1000-2000</a>
+      </div>
+    </div>
+    <div class="btn-group drop">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Sort By</button>
+      <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Price</a>
+          <a href="#" class="dropdown-item">Popularity</a>
+      </div>
+    </div>
+
+      <div class="row" *ngFor="let prod of productList; let name = index" >
+        <div class="col-md-3" *ngFor="let products of prod; let names = index">          
+          <div class="card" style="background-color: rgb(224, 224, 241); padding: 5px;">
+            <a routerLink='/product' (click)="card(products)" >
+              <img [src]="products">               
+            </a> 
+            <div class="card-body" style="text-align: center;">
+              <h5 class="card-title">{{productname[name][names]}}</h5>
+              <p class="card-text">Rs. {{productprice[name][names]}}</p>
+            </div>  
+          </div>                
+        </div>
+      </div>
+
+     <div class="buttons">
+        <button type="button" class="btn btn-primary">View All Products</button>
+    </div>
+    <div class="row">
+      <div class="col-4">
+          <div class="card" style="background-color: rgb(224, 224, 241);">
+              <a routerLink='/men' >
+                  <img src="https://i.pinimg.com/originals/50/2f/aa/502faacce67237a91c1f795632b9a7ba.jpg" style="height: 400px; width: fit-content;">                
+              </a>
+              <div class="card-body" style="text-align: center;">
+                  <h5 class="card-title">Men</h5>   
+              </div> 
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card" style="background-color: rgb(224, 224, 241);">
+              <a routerLink='/women' >
+                  <img src="https://trendingonlinenow.in/wp-content/uploads/2017/10/Biba.jpg" style="height: 400px; width: fit-content;">                
+              </a>
+              <div class="card-body" style="text-align: center;">
+                  <h5 class="card-title">Women</h5>   
+              </div> 
+          </div>
+      </div>
+
+      <div class="col-4">
+          <div class="card" style="background-color: rgb(224, 224, 241)">
+              <a routerLink='/watches' >
+                  <img src="https://cdn.mos.cms.futurecdn.net/DxpaKaHPBL5yF8vBjh2MjX.jpg" style="height: 400px; width: fit-content;">                
+              </a>
+              <div class="card-body" style="text-align: center;">
+                  <h5 class="card-title">Watches</h5>   
+              </div> 
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  
+<app-footer></app-footer>
+</ion-content>
+
+
+
+
+

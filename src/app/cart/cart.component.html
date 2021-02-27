@@ -1,0 +1,111 @@
+<app-header></app-header>
+<ion-content>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+            <div class="container cart page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>SubTotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <tr>
+                                    <div *ngFor="let image of Image" >
+                                        <td>    
+                                            <img [src]="image" >
+                                        </td>    
+                                    </div>
+                                </tr>
+                                <td>
+                                    <div *ngFor="let details of productDetails">
+                                                <p>{{details[0][1]}}</p>
+                                                <small>Price: Rs.{{details[0][0]}} </small>
+                                                <br>
+                                                <br>
+                                                <!-- <a (click)="remove(details[0][1],details[0][0])"> Remove</a> -->
+                                    </div>   
+                                    <br>
+                                </td>  
+                                <tr><br></tr>
+                            </div>
+                        </td>
+                        <td>
+                            <div *ngFor="let quant of quantity">
+                                <td>{{quant}}</td>
+                                <br><br>
+                            </div>
+                        </td>
+                        <td>
+                            
+                            <div *ngFor="let details of productDetails">
+                                
+                                <td>Rs. {{details[0][0]}}</td>
+                                <br><br>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <!-- <td>
+                                <p>SubTotal</p>
+                                <small>{{subtotal}}</small>
+                            </td> -->
+                            <td>SubTotal</td>
+                            <td style="text-align: center;">{{subtotal}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td style="text-align: center;">{{tax}}</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td style="text-align: center;">{{total}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4" style="text-align: center;">
+                <button class="btn btn-primary" (click)="clearcart()">Clear Cart</button>
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4" style="text-align: center;">
+                <button class="btn btn-primary" (click)="placeorder()">Place the Order</button>
+            </div>
+
+        </div>
+
+    </div>
+  </div>
+
+<app-footer></app-footer>
+</ion-content>
+
+
+
+
+
+
+
+
+

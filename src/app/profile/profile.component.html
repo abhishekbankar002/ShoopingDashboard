@@ -1,26 +1,33 @@
+<app-header></app-header>
+<ion-content>
 <div class="container-fluid">
   <div class="signup-form">
       <form action="/examples/actions/confirmation.php" method="post">
           <h2>Profile Details</h2>
           
-          <div class="form-group">
-              <div class="row">
-                  <div class="col"><input type="text" class="form-control" name="first_name" placeholder="Name" required="required"></div>
-              </div>        	
+          <div class="form-group" *ngFor="let profile of name">
+                <textarea readonly type="text" [(ngModel)]="name" class="form-control" name="name" required="required">{{profile}} </textarea>
           </div>
-          <div class="form-group">
-              <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+          <div class="form-group" *ngFor="let profile of email">
+              <textarea readonly type="email" class="form-control" name="email" required="required">{{profile[0]}}</textarea>
           </div>
-          <div class="form-group">
-              <input type="string" class="form-control" name="mobile_number" placeholder="Mobile Number" required="required">
+          <div class="form-group" *ngFor="let profile of name">
+              <textarea readonly type="string" class="form-control" [(ngModel)]="number" name="number" required="required">{{profile}}</textarea>
           </div>        
-          <div class="form-group">
+          <!-- <div class="form-group">
               <button type="submit" class="btn btn-primary btn-lg btn-block">Update Details</button>
-          </div>
+          </div> -->
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" (click)="logout()">Log Out</button>
+        </div>
           <div class="change-password">
-              <a href="#"> Change Password</a>
+              <a (click)="orderhistory()"> Order History</a>
           </div>
       </form>
   </div>
 </div>
+
+
+<app-footer></app-footer>
+</ion-content>
 

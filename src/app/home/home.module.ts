@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
-import { SignupComponent } from '../signup/signup.component';
-import { ProfileComponent } from '../profile/profile.component';
+// import { HeaderComponent } from '../header/header.component';
+// import { FooterComponent } from '../footer/footer.component';
+// import { SignupComponent } from '../signup/signup.component';
+// import { ProfileComponent } from '../profile/profile.component';
 
 @NgModule({
   imports: [
@@ -17,6 +17,7 @@ import { ProfileComponent } from '../profile/profile.component';
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage,HeaderComponent,FooterComponent,SignupComponent,ProfileComponent]
+  declarations: []
 })
 export class HomePageModule { }
+// HomePage,HeaderComponent,FooterComponent,SignupComponent,ProfileComponent

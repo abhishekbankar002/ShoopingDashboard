@@ -1,0 +1,73 @@
+<app-header></app-header>
+<ion-content>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+            <div class="container cart page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>SubTotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <tr>
+                                    <div *ngFor="let image of Image[0]" >
+                                        <td>    
+                                            <img [src]="image" >
+                                        </td>    
+                                    </div>
+                                </tr>
+                                <td>
+                                    <div *ngFor="let details of productDetails[0]">
+                                                <p>{{details[0][1]}}</p>
+                                                <small>Price: Rs.{{details[0][0]}} </small>
+                                                <br>
+                                                <br>
+                                    </div>   
+                                    <br>
+                                </td>  
+                                <tr><br></tr>
+                            </div>
+                        </td>
+                        <td>
+                          <div *ngFor="let quant of quantity[0]">
+                              <td>{{quant}}</td>
+                              <br><br>
+                          </div>
+                      </td>
+                        <td>
+                            
+                            <div *ngFor="let details of productDetails[0]">
+                                
+                                <td>Rs. {{details[0][0]}}</td>
+                                <br><br>
+                            </div>
+                        </td>
+                        
+                    </tr>
+    
+                </table>
+      
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+<app-footer></app-footer>
+</ion-content>
+
+
+
+
+
+
+
+
+

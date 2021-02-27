@@ -1,27 +1,31 @@
+<app-header></app-header>
+<ion-content>
 <div class="container-fluid">
   <div class="signup-form">
       <form action="/examples/actions/confirmation.php" method="post">
-          <h2>SIGN UP WITH SHOPPER'S STOP</h2>
+          <h2>SIGN UP WITH SHOPPING DASHBOARD</h2>
           
           <div class="form-group">
-              <input type="name" class="form-control" name="email" placeholder="Name" required="required">        	
+              <input [(ngModel)]="name" type="name" name="name" class="form-control"  placeholder="Name" required="required">        	
           </div>
           <div class="form-group">
-              <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+              <input [(ngModel)]="email" type="email" name="email" class="form-control"  placeholder="Email" required="required">
           </div>
           <div class="form-group">
-              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+              <input [(ngModel)]="password" type="password" name="password" class="form-control"  placeholder="Password" required="required">
           </div>
           <div class="form-group">
-              <input type="string" class="form-control" name="mobile_number" placeholder="Mobile Number" required="required">
+              <input [(ngModel)]="number" type="number" name="number" class="form-control" placeholder="Mobile Number" required="required">
           </div>        
           <div class="form-group">
               <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
           </div>
           <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-lg btn-block">Create an Account</button>
+              <button (click)="RegisterUser()" type="submit" class="btn btn-primary btn-lg btn-block">Create an Account</button>
           </div>
       </form>
-      <div class="text-center">Already have an account? <a href="#">Login</a></div>
+      <div class="text-center">Already have an account? <a routerLink="/login" style="color: blue;">Login</a></div>
   </div>
 </div>
+<app-footer></app-footer>
+</ion-content>
