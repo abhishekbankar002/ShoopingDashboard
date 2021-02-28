@@ -43,7 +43,7 @@ export class SignupComponent implements OnInit {
 
     this.http.post(environment.serverurl+"/api/user/",this.register).subscribe((res:any)=>{
        // console.log(this.register);
-       console.log(res);
+      //  console.log(res);
 
        this.success=res['request'];
        if(this.success=="New User Created")

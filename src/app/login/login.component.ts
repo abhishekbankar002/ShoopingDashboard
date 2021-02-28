@@ -54,7 +54,7 @@ export class LoginComponent implements OnInit {
         {
             alert("Invalid Credentials! Please try again");
         }
-      console.log(this.username);
+      // console.log(this.username);
     }
     );
   }
@@ -64,22 +64,3 @@ export class LoginComponent implements OnInit {
 
 
 
-// data =>{
-      //   // console.log(this.userlogin);
-      //   console.log(data);
-
-      //   this.success=data['request'];
-      //   this.username=data['username']
-      //   if(this.success=="1")
-      //   {
-      //       alert("Successfully Logged In");
-
-      //       this.router.navigate(['/site']);
-      //   }
-      //   else if(this.success=="0")
-      //   {
-      //       alert("Invalid Credentials! Please try again");
-      //   }
-
-
-      // }

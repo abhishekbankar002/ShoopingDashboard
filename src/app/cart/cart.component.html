@@ -1,7 +1,7 @@
 <app-header></app-header>
 <ion-content>
 
-  <div class="container-fluid">
+  <div class="container-fluid" style="padding-top: 50px; padding-bottom: 100px;">
     <div class="row">
         <div class="col-2">
         </div>
@@ -29,7 +29,6 @@
                                                 <small>Price: Rs.{{details[0][0]}} </small>
                                                 <br>
                                                 <br>
-                                                <!-- <a (click)="remove(details[0][1],details[0][0])"> Remove</a> -->
                                     </div>   
                                     <br>
                                 </td>  
@@ -56,10 +55,6 @@
                 <div class="total-price">
                     <table>
                         <tr>
-                            <!-- <td>
-                                <p>SubTotal</p>
-                                <small>{{subtotal}}</small>
-                            </td> -->
                             <td>SubTotal</td>
                             <td style="text-align: center;">{{subtotal}}</td>
                         </tr>
@@ -71,11 +66,17 @@
                             <td>Total</td>
                             <td style="text-align: center;">{{total}}</td>
                         </tr>
+            
                     </table>
                 </div>
             </div>
             
         </div>
+
+        
+
+
+
         <div class="row">
             <div class="col-4">
             </div>
@@ -86,6 +87,8 @@
         </div>
         <br>
         <br>
+        
+        
         <div class="row">
             <div class="col-4">
             </div>

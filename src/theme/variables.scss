@@ -230,3 +230,44 @@
     --ion-card-background: #1e1e1e;
   }
 }
+// // CUSTOM ANIMATION KEYFRAMS********************
+// @-webkit-keyframes scale-down-center {
+//   0% {
+//     -webkit-transform: scale(1);
+//             transform: scale(1);
+//   }
+//   100% {
+//     -webkit-transform: scale(0.5);
+//             transform: scale(0.5);
+//   }
+// }
+// @keyframes scale-down-center {
+//   0% {
+//     -webkit-transform: scale(1);
+//             transform: scale(1);
+//   }
+//   100% {
+//     -webkit-transform: scale(0.5);
+//             transform: scale(0.5);
+//   }
+// }
+// ion-loading.custom-loading {
+//   // -webkit-animation: scale-down-center 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) infinite alternate both;
+//   //         animation: scale-down-center 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) infinite alternate both;
+//    width: 120px;
+//   height: 120px;
+//   text-align: center;
+// }
+// CUSTOM ANIMATION KEYFRAMS********************
+// ion-loading.custom-loading {
+//   // .loading-wrapper {
+//   //   background: #ffffff url("https://i.pinimg.com/originals/c1/bc/d8/c1bcd8a8c945b53da6b29f10a2a553c0.gif") no-repeat center;
+//   // }
+//   background: url("https://i.pinimg.com/originals/c1/bc/d8/c1bcd8a8c945b53da6b29f10a2a553c0.gif")  no-repeat center;
+//   // width: 50px;
+//   // height: 50px;
+//   // background-size: 100px 100px; /* to change dimension of background */
+//   // padding-top: 36px; /* padding top of white square */
+//   // padding-bottom: 36px; /* padding bottom of white square */
+//   // border-radius: 0.8rem; /* border-radius white square */
+// }

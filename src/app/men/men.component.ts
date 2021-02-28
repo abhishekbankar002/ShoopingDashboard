@@ -20,20 +20,20 @@ export class MenComponent implements OnInit {
     this.productprice=[];
 
       this.userService.getApi(this.section).subscribe((res:any)=>{
-        console.log(res);
+        // console.log(res);
           this.productList.push((res['response']));
           this.productname.push((res['detailname']));
           this.productprice.push((res['detailprice']));
           // this.productDetail.push(res['details']);
       } 
       );
-      console.log(this.productList);
-      console.log(this.productname);
-      console.log(this.productprice);
+      // console.log(this.productList);
+      // console.log(this.productname);
+      // console.log(this.productprice);
   }
   public card(product){
     // this.imgurl=product;
-    console.log(product);
+    // console.log(product);
     this.userService.card(product);
     this.router.navigate(['/product']);
   }

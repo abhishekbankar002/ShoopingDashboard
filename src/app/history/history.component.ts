@@ -18,9 +18,9 @@ export class HistoryComponent implements OnInit {
     this.productDetails=this.userService.carthistorydetails();
     this.Image=this.userService.carthistoryImages();
     this.quantity=this.userService.historyquantity();
-    console.log(this.productDetails);
-    console.log(this.Image);
-    console.log(this.quantity);
+    // console.log(this.productDetails);
+    // console.log(this.Image);
+    // console.log(this.quantity);
    }
 
   ngOnInit() {}

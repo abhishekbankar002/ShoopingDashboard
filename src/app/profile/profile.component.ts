@@ -24,15 +24,15 @@ export class ProfileComponent implements OnInit {
     this.number=[];
   
     this.email.push(this.userService.profiledetails());
-    console.log(this.email);
+    // console.log(this.email);
     this.request={obj:this.email};
-    console.log(this.request);
+    // console.log(this.request);
     this.Http.put(environment.serverurl+"/api/profile/",this.request).subscribe((res:any)=>{
       this.name.push(res['name']);
       this.number.push(res['number']);
     }
     );
-    console.log(this.name,this.number);
+    // console.log(this.name,this.number);
 
    }
 
@@ -41,7 +41,7 @@ export class ProfileComponent implements OnInit {
     this.request={obj:this.email};
     this.Http.post(environment.serverurl+'/api/orderhistory/',this.request).subscribe((res:any)=>
     {
-      console.log(res);
+      // console.log(res);
       this.image.push(res['image']);
       this.productdeatils.push(res['productdetails']);
       this.quantity.push(res['quantity']);
@@ -59,7 +59,7 @@ export class ProfileComponent implements OnInit {
      this.quantity=[];
      this.productdeatils=[];
      this.userService.getprofile("");
-     alert("Successfully Logged Out");
+    //  alert("Successfully Logged Out");
      this.router.navigate(['/login']);
    }
 

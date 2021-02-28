@@ -30,10 +30,10 @@ export class UserService {
   }
   card(imageurl:string){
     this.url=imageurl;
-    console.log(this.url);
+    // console.log(this.url);
   }
   product(){
-    console.log(this.url);
+    // console.log(this.url);
     return this.url;
   }
   getProductDetails(img:string){;
@@ -41,7 +41,7 @@ export class UserService {
     this.prod=[];
     this.http.post(environment.serverurl+"/api/product/",this.imgurl).subscribe((res:any)=>{
       this.prod.push(res['response']);
-      console.log(this.prod); 
+      // console.log(this.prod); 
     }
     ); 
     return(this.prod);
@@ -52,37 +52,42 @@ export class UserService {
     this.cartImage.push(img);
     this.quantity.push(quantity);
     // console.log(this.cartProducts);
-    console.log(this.cartImage);
-    console.log(this.quantity);
+    // console.log(this.cartImage);
+    // console.log(this.quantity);
+  }
+  clearcart(){
+    this.cartProducts=[];
+    this.cartImage=[];
+    this.quantity=[];
   }
   cartquantity(){
     return this.quantity;
   }
   cartdetails(){
     // this.cartProducts.push(this.cartImage);
-    console.log(this.cartProducts);
+    // console.log(this.cartProducts);
     return this.cartProducts;
   }
   cartImages(){
-    console.log(this.cartImage);
+    // console.log(this.cartImage);
     return this.cartImage;
     }
   getprofile(email){
     this.email=email;
-    console.log(this.email);
+    // console.log(this.email);
   }
   profiledetails(){
-    console.log(this.email);
+    // console.log(this.email);
     return this.email;
   }
   carthistory(productdetails,image,quantity){
-    console.log(this.email);
-    console.log(productdetails);
-    console.log(image);
+    // console.log(this.email);
+    // console.log(productdetails);
+    // console.log(image);
     this.obj={'obj':this.email,'product':productdetails,'image':image,'quantity':quantity};
-    console.log(this.obj);
+    // console.log(this.obj);
     this.http.put(environment.serverurl+"/api/cart/",this.obj).subscribe((res:any)=>{
-      console.log(res);
+      // console.log(res);
     });
   }
   displaycarthistory(productdetails,image,quantity){

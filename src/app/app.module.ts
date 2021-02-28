@@ -25,11 +25,28 @@ import { WomenComponent } from './women/women.component';
 import { WatchesComponent } from './watches/watches.component';
 import { HistoryComponent } from './history/history.component';
 
+
+
+
 @NgModule({
   declarations: [
-    AppComponent,HeaderComponent,FooterComponent,ProfileComponent,SignupComponent,LoginComponent,MenComponent,CartComponent,SiteComponent,ProductComponent,WomenComponent,WatchesComponent,HistoryComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProfileComponent,
+    SignupComponent,
+    LoginComponent,
+    MenComponent,
+    CartComponent,
+    SiteComponent,
+    ProductComponent,
+    WomenComponent,
+    WatchesComponent,
+    HistoryComponent,
   ],
-  entryComponents: [],
+  entryComponents: [
+
+  ],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
@@ -40,7 +57,9 @@ import { HistoryComponent } from './history/history.component';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy,
+       useClass: IonicRouteStrategy 
+      }
   ],
   bootstrap: [AppComponent]
 })

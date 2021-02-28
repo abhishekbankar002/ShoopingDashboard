@@ -1,80 +1,24 @@
 <app-header></app-header>
 <ion-content>
-<!-- <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-        <div class="row">
-            <div class="col-md-2">
-           </div> 
-          <div class="col-md-10">
-              <div class="card-body">
-                  <br>
-                  <br>
-                <img class="card-img-top shadow" [src]="img" >
-              </div>
-          </div>  
-      </div>
-    </div>
-    <div class="col-md-6">
-        <br>
-        <br>
-      <div class="fantasy" >
-          <p *ngFor="let prod of productdetails">{{prod[1]}}</p>   
-      </div>
-      
-      <div *ngFor="let prod of productdetails">
-        <p><span class="mr-10"><strong>Rs. {{prod[0]}}</strong></span></p>
-      </div>
-      
-      <p class="mb-2 text-muted text-uppercase small">Size</p>
-      <div class="mt-1">
-            <input type="button" id="medium"  value="MEDIUM" placeholder="SMALL" name="materialExampleRadios">
-            <input type="button"  id="small" placeholder="MEDIUM" value="SMALL" name="materialExampleRadios" style="margin-left: 5px;">
-            <input type="button" placeholder="LARGE"  id="large" value="LARGE" name="materialExampleRadios" style="margin-left: 5px;">  
-      </div>
-      <br>
-        <button type="button" class="btn btn-primary" (click)="cart()">Add to Cart</button>
-      <br><br>
-        <div class="product-det">
-            <p> PRODUCT DETAILS</p>
-        </div>
-      <div class="table-responsive">
-        <table class="table table-sm table-borderless mb-0">
-          <tbody>
-            <tr>
-              <th class="pl-0 w-25" scope="row"><strong>Color</strong></th>
-              <td>Black</td>
-            </tr>
-            <tr>
-              <th class="pl-0 w-25" scope="row"><strong>Weight</strong></th>
-              <td>156 gms</td>
-            </tr>
-            <tr>
-              <th class="pl-0 w-25" scope="row"><strong>Material</strong></th>
-              <td>Cotton</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <hr>
-    </div>
-  </div>
 
-</div> -->
 <div class="container-fluid">
   <div class="wrapper">
     <div class="card">
-        <div class="product-img">
-          <div class="row">
-                  <div class="col-md-1">
-                 </div> 
-                  <div class="col-md-10">
-                    <div class="card-body" style="height: 100%;">
-                      <img class="card-img-top shadow" [src]="imag" >
-                    </div>
-                </div>  
+          <div class="product-img">
+            <div class="row">
+                <div class="col-1">
+                </div> 
+                 <div class="col-10">
+                  <div class="card-body" style="height: 100%;">
+                     <img class="card-img-top shadow" [src]="imag" >
+                  </div>
+              </div>  
+            </div>
           </div>
-        </div>
+        
+      
+       
+                 
         <div class="product-content">
             <h2 class="product-title" *ngFor="let prod of productdetails"> {{prod[1]}}</h2>
             <a href="https://www.myntra.com/" class="product-link">Visit Myntra Store</a>
