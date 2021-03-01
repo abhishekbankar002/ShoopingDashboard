@@ -1,9 +1,9 @@
 # ShoopingDashboard
 
-#Objective
+##Objective
 Ecommerce Website with login, sign-up , cart , cart history details
 
-#Clone the repository
+##Clone the repository
 git clone https://github.com/abhishekbankar002/ShoopingDashboard.git
 
 #Running Frontend 
