@@ -9,9 +9,13 @@
     git clone https://github.com/abhishekbankar002/ShoopingDashboard.git
     
     
-## Pip Installation
+## Installation required
   
-    pip install -r requirements.txt
+   Python==3.8.5
+   MongoDB
+   Django==3.1.7
+   Ionic CLI: 6.12.3
+   Angular CLI: 10.0.8
  
 ## Demo Video
 
