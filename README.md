@@ -31,15 +31,16 @@
 
 ### For Ionic (Main Branch)
 
-ionic serve
+    ionic serve
 
 ### For django (Master Branch)
 
-python manange.py migrate
-python manage.py runserver
+    python manange.py migrate
+
+    python manage.py runserver
 
 ### Api For Product Details
  
 
-[ProductDetailsupload.zip](https://github.com/abhishekbankar002/ShoopingDashboard/files/6059627/ProductDetailsupload.zip)
+    [ProductDetailsupload.zip](https://github.com/abhishekbankar002/ShoopingDashboard/files/6059627/ProductDetailsupload.zip)
 
